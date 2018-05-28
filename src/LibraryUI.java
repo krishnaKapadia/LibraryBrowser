@@ -654,13 +654,13 @@ class AuthDialog extends JDialog {
                             ERROR_MESSAGE);
                     return;
                 }
-                if (getDatabasePassword().length() == 0) {
-                    showMessageDialog(AuthDialog.this,
-                            "Please enter a password",
-                            "Format Error",
-                            ERROR_MESSAGE);
-                    return;
-                }
+//                if (getDatabasePassword().length() == 0) {
+//                    showMessageDialog(AuthDialog.this,
+//                            "Please enter a password",
+//                            "Format Error",
+//                            ERROR_MESSAGE);
+//                    return;
+//                }
                 okButtonClicked = true;
                 setVisible(false);
             }
