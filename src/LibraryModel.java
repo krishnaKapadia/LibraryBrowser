@@ -11,6 +11,10 @@ import java.sql.*;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+
+import static javax.swing.JOptionPane.YES_OPTION;
+import static javax.swing.JOptionPane.showConfirmDialog;
+import static javax.swing.JOptionPane.showMessageDialog;
 import java.util.List;
 
 public class LibraryModel {
@@ -26,7 +30,7 @@ public class LibraryModel {
             Class.forName("org.postgresql.Driver");
             String url = "jdbc:postgresql:" + "//localhost:5432/" + userid + "_jdbc";
             connection = DriverManager.getConnection(url, userid, password);
-            connection.setReadOnly(true);
+            //connection.setReadOnly(false);
             connection.setTransactionIsolation(Connection.TRANSACTION_SERIALIZABLE);
         } catch (ClassNotFoundException cnfe) {
             System.out.println("Can not find" +
@@ -49,11 +53,13 @@ public class LibraryModel {
         String result = "Unable to get books";
 
         try {
-            statement = connection.createStatement();
+            //connection.setReadOnly(true);
+            Statement statement = connection.createStatement();
             results = statement.executeQuery("SELECT * FROM book WHERE isbn =" + isbn);
 
             result = this.getBooks(results);
             statement.close();
+            //connection.setReadOnly(false);
         } catch (SQLException sqlex) {
             result = "An exception" +
                     "while creating a statement," +
@@ -72,11 +78,13 @@ public class LibraryModel {
         String result = "Unable to get books";
 
         try {
-            statement = connection.createStatement();
+            //connection.setReadOnly(true);
+            Statement statement = connection.createStatement();
             results = statement.executeQuery("SELECT * FROM book");
 
             result = this.getBooks(results);
             statement.close();
+            //connection.setReadOnly(false);
         } catch (SQLException sqlex) {
             result = "An exception" +
                     "while creating a statement," +
@@ -95,11 +103,13 @@ public class LibraryModel {
         String result = "Unable to get books";
 
         try {
-            statement = connection.createStatement();
+            //connection.setReadOnly(true);
+            Statement statement = connection.createStatement();
             results = statement.executeQuery("SELECT * FROM book AS b WHERE b.numofcop - b.numleft != 0");
 
             result = this.getBooks(results);
             statement.close();
+            //connection.setReadOnly(false);
         } catch (SQLException sqlex) {
             result = "An exception" +
                     "while creating a statement," +
@@ -119,11 +129,13 @@ public class LibraryModel {
         String result = "Unable to get author given that Id";
 
         try {
-            statement = connection.createStatement();
+            //connection.setReadOnly(true);
+            Statement statement = connection.createStatement();
             results = statement.executeQuery("SELECT * FROM author WHERE authorid =" + authorID);
 
             result = this.getAuthor(results);
             statement.close();
+            //connection.setReadOnly(false);
         } catch (SQLException sqlex) {
             result = "An exception" +
                     "while creating a statement," +
@@ -142,11 +154,14 @@ public class LibraryModel {
         String result = "Unable to get authors";
 
         try {
-            statement = connection.createStatement();
+            //connection.setReadOnly(true);
+
+            Statement statement = connection.createStatement();
             results = statement.executeQuery("SELECT * FROM author");
 
             result = this.getAuthor(results);
             statement.close();
+            //connection.setReadOnly(false);
         } catch (SQLException sqlex) {
             result = "An exception" +
                     "while creating a statement," +
@@ -166,11 +181,13 @@ public class LibraryModel {
         String result = "Unable to get customer given that Id";
 
         try {
-            statement = connection.createStatement();
+            //connection.setReadOnly(true);
+            Statement statement = connection.createStatement();
             results = statement.executeQuery("SELECT * FROM customer WHERE customerID =" + customerID);
 
             result = this.getCustomer(results);
             statement.close();
+            //connection.setReadOnly(false);
         } catch (SQLException sqlex) {
             result = "An exception" +
                     "while creating a statement," +
@@ -189,11 +206,13 @@ public class LibraryModel {
         String result = "Unable to get customers";
 
         try {
-            statement = connection.createStatement();
+            //connection.setReadOnly(true);
+            Statement statement = connection.createStatement();
             results = statement.executeQuery("SELECT * FROM customer");
 
             result = this.getCustomer(results);
             statement.close();
+            //connection.setReadOnly(false);
         } catch (SQLException sqlex) {
             result = "An exception" +
                     "while creating a statement," +
@@ -290,98 +309,159 @@ public class LibraryModel {
         4. Update the Book table, and
         5. Commit the transaction (if actions were all successful, otherwise rollback)
          */
+        String returnString = "";
         String findCustomer = "SELECT * FROM customer WHERE customerid =" + customerID;
         String findBook = "SELECT * FROM book WHERE isbn = " + isbn + " AND numleft > 0";
         String insertBook = "INSERT INTO cust_book (isbn, duedate, customerid) VALUES(?, ?, ?)";
-        String updateBook = "UPDATE book SET numleft = numleft - 1 WHERE isbn = " + isbn;
+        String updateBook = "UPDATE book SET numleft = numleft - 1 WHERE isbn = " + isbn +  " AND numleft > 0";
+        PreparedStatement findStatement = null, findBookStatement = null, insertBookStatment = null, updateBookStatement = null;
 
         try {
-            connection.setReadOnly(false);
+            //connection.setReadOnly(true);
             connection.setAutoCommit(false);
-            PreparedStatement findStatement = connection.prepareStatement(findCustomer);
+            findStatement = connection.prepareStatement(findCustomer);
 
 //            Ensure customer exists
-            if(findStatement.execute()) {
+            if(findStatement.executeQuery().next()) {
 //                Find book
-                PreparedStatement findBookStatement = connection.prepareStatement(findBook);
-                if(findBookStatement.execute()) {
+                findBookStatement = connection.prepareStatement(findBook);
+                if(findBookStatement.executeQuery().next()) {
 //                    Insert
-                    PreparedStatement insertBookStatment = connection.prepareStatement(insertBook);
+                    insertBookStatment = connection.prepareStatement(insertBook);
                     insertBookStatment.setInt(1, isbn);
                     insertBookStatment.setDate(2, new Date(new SimpleDateFormat("yyyy-MM-dd").parse(year + "-" + month + "-" + day).getTime()));
                     insertBookStatment.setInt(3, customerID);
-                    insertBookStatment.executeUpdate();
 
-//                    Update book table
-                    PreparedStatement updateBookStatement = connection.prepareStatement(updateBook);
-                    updateBookStatement.executeUpdate();
-
-//                    Commit transaction
-                    connection.commit();
-                    findStatement.close();
-                    findBookStatement.close();
-                    insertBookStatment.close();
-                    return "Book is now borrowed";
+                    if(insertBookStatment.executeUpdate() == 0) {
+                        returnString = "Could not borrow book";
+                    } else {
+                        int input = createConfirmDialog("Transaction intermission");
+                        if(input == 0) {
+                            //                    Update book table
+                            updateBookStatement = connection.prepareStatement(updateBook);
+                            if(updateBookStatement.executeUpdate() == 0) {
+                                returnString = "Could not update book inventory";
+                            } else {
+                                //                    Commit transaction
+                                connection.commit();
+                                findStatement.close();
+                                findBookStatement.close();
+                                insertBookStatment.close();
+                                return "Book is now borrowed";
+                            }
+                        }
+                    }
+                } else {
+                    returnString = "Book not found";
                 }
+            } else {
+                returnString = "Customer not found";
             }
 
         } catch (SQLException | ParseException e) {
-            System.out.println("Revert");
+            System.out.println(e.getMessage());
             try {
                 connection.rollback();
+                if(findStatement != null) findStatement.close();
+                if(findBookStatement != null) findBookStatement.close();
+                if(insertBookStatment != null) insertBookStatment.close();
+                if(updateBookStatement != null) updateBookStatement.close();
+                //connection.setReadOnly(true);
             } catch (SQLException e1) {
                 e1.printStackTrace();
             }
             return e.getMessage();
         }
 
-        return "Book was not able to be borrowed";
+//                    Commit transaction
+        try {
+            connection.rollback();
+            if(findStatement != null) findStatement.close();
+            if(findBookStatement != null) findBookStatement.close();
+            if(insertBookStatment != null) insertBookStatment.close();
+            if(updateBookStatement != null) updateBookStatement.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return returnString;
     }
 
     public String returnBook(int isbn, int customerid) {
+        String returnString = "";
         String findCustomer = "SELECT * FROM customer WHERE customerid =" + customerid;
-        String findBook = "SELECT * FROM book WHERE isbn = " + isbn + " AND numleft > 0";
-        String removeBooking = "DELETE ALL FROM cust_book WHERE isbn = " + isbn + " AND customerid = " + customerid;
-        String updateBook = "UPDATE book SET numleft = numleft + 1 WHERE isbn = " + isbn;
+        String findBook = "SELECT * FROM cust_book WHERE isbn = " + isbn;
+        String removeBooking = "DELETE FROM cust_book WHERE isbn = " + isbn + " AND customerid = " + customerid;
+        String updateBook = "UPDATE book SET numleft = numleft + 1 WHERE isbn = " + isbn + " AND numleft < numofcop";
+        PreparedStatement findCustomerStatement = null, removeBookStatment = null, updateBookStatement = null;
+        Statement findBookStatement = null;
 
         try {
-            connection.setReadOnly(false);
             connection.setAutoCommit(false);
-            PreparedStatement findCustomerStatement = connection.prepareStatement(findCustomer);
-
+            findCustomerStatement = connection.prepareStatement(findCustomer);
 //            Ensure customer exists
-            if(findCustomerStatement.execute()) {
-//                Find book exists
-                PreparedStatement findBookStatement = connection.prepareStatement(findBook);
-                if(findBookStatement.execute()) {
+            if(findCustomerStatement.executeQuery().next()) {
+//                Find book exists in bookings
+                findBookStatement  = connection.createStatement();
+                if(findBookStatement.executeQuery(findBook).next()) {
 //                    Remove
-                    PreparedStatement insertBookStatment = connection.prepareStatement(removeBooking);
-                    insertBookStatment.executeUpdate();
-
+                    removeBookStatment = connection.prepareStatement(removeBooking);
+                    if(removeBookStatment.executeUpdate() == 0) {
+                        returnString = "Could not return book";
+                    }{
+                        int input = createConfirmDialog("Transaction intermission");
+                        if(input == 0) {
 //                    Update book table
-                    PreparedStatement updateBookStatement = connection.prepareStatement(updateBook);
-                    updateBookStatement.executeUpdate();
+                            updateBookStatement = connection.prepareStatement(updateBook);
+                            if(updateBookStatement.executeUpdate() == 0) {
+                                returnString = "Could not update book inventory";
+                            } else {
 
 //                    Commit transaction
-                    connection.commit();
-                    findCustomerStatement.close();
-                    findBookStatement.close();
-                    insertBookStatment.close();
-                    return "Book is now borrowed";
+                                connection.commit();
+                                findCustomerStatement.close();
+                                findBookStatement.close();
+                                removeBookStatment.close();
+                                updateBookStatement.close();
+                                return "Book is now returned";
+                            }
+                        }
+
+                    }
+
+                } else {
+                    returnString = "Book not found";
                 }
+            } else {
+                returnString = "Customer not found";
             }
 
         } catch (SQLException e) {
-            System.out.println("Revert");
+            System.out.println(e.getMessage());
             try {
                 connection.rollback();
+                if(findCustomerStatement != null) findCustomerStatement.close();
+                if(findBookStatement != null) findBookStatement.close();
+                if(removeBookStatment != null) removeBookStatment.close();
+                if(updateBookStatement != null) updateBookStatement.close();
             } catch (SQLException e1) {
                 e1.printStackTrace();
             }
+
             return e.getMessage();
         }
 
-        return "Book was not able to be returned";
+        try {
+            connection.rollback();
+            if(findCustomerStatement != null) findCustomerStatement.close();
+            if(findBookStatement != null) findBookStatement.close();
+            if(removeBookStatment != null) removeBookStatment.close();
+            if(updateBookStatement != null) updateBookStatement.close();
+            //connection.setReadOnly(true);
+        } catch (SQLException e1) {
+            e1.printStackTrace();
+        }
+        return returnString;
     }
 
     /**
@@ -397,16 +477,187 @@ public class LibraryModel {
 
     }
 
+//    TODO CHECK
     public String deleteCus(int customerID) {
-        return "";
+//        Delete from customer
+//        Table 2 in assignment brief states that on deletion of a customer, the corresponding entry in cust_book is restricted therefore is not deleted
+        String returnString = "";
+        String findCustomer = "SELECT * FROM customer WHERE customerid =" + customerID;
+        String deleteCustomer = "DELETE FROM customer WHERE customerid =" + customerID;
+        PreparedStatement findStatement = null, deleteStatement = null;
+
+        try {
+            connection.setAutoCommit(false);
+            findStatement = connection.prepareStatement(findCustomer);
+
+//            Ensure customer exists
+            if(findStatement.executeQuery().next()) {
+                deleteStatement = connection.prepareStatement(deleteCustomer);
+
+                if(deleteStatement.executeUpdate() == 0) {
+                    returnString = "Could not delete customer";
+                }else {
+                    connection.commit();
+                    findStatement.close();
+                    deleteStatement.close();
+                    return "Customer successfully deleted";
+                }
+
+            } else {
+                returnString = "Customer does not exist";
+            }
+
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+            try {
+                connection.rollback();
+                if(findStatement != null) findStatement.close();
+                if(deleteStatement != null) deleteStatement.close();
+                //connection.setReadOnly(true);
+            } catch (SQLException e1) {
+                e1.printStackTrace();
+            }
+            return e.getMessage();
+        }
+
+//                    Commit transaction
+        try {
+            connection.rollback();
+            if(findStatement != null) findStatement.close();
+            if(deleteStatement != null) deleteStatement.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return returnString;
     }
 
+//    TODO CHECK
     public String deleteAuthor(int authorID) {
-        return "Delete Author";
+        //        Delete from Author
+//        Table 2 in assignment brief states that on deletion of a author, the corresponding entry in cust_book is restricted therefore is not deleted
+        String returnString = "";
+        String findCustomer = "SELECT * FROM author WHERE authorid =" + authorID;
+        String deleteCustomer = "DELETE FROM author WHERE authorid =" + authorID;
+        PreparedStatement findStatement = null, deleteStatement = null;
+
+        try {
+            connection.setAutoCommit(false);
+            findStatement = connection.prepareStatement(findCustomer);
+
+//            Ensure Author exists
+            if(findStatement.executeQuery().next()) {
+                deleteStatement = connection.prepareStatement(deleteCustomer);
+
+                if(deleteStatement.executeUpdate() == 0) {
+                    returnString = "Could not delete author";
+                }else {
+                    connection.commit();
+                    findStatement.close();
+                    deleteStatement.close();
+                    return "Author successfully deleted";
+                }
+
+            } else {
+                returnString = "Author does not exist";
+            }
+
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+            try {
+                connection.rollback();
+                if(findStatement != null) findStatement.close();
+                if(deleteStatement != null) deleteStatement.close();
+                //connection.setReadOnly(true);
+            } catch (SQLException e1) {
+                e1.printStackTrace();
+            }
+            return e.getMessage();
+        }
+
+//                    Commit transaction
+        try {
+            connection.rollback();
+            if(findStatement != null) findStatement.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return returnString;
     }
 
+//    TODO CHECK
     public String deleteBook(int isbn) {
-        return "Delete Book";
+//        Table 2 in assignment brief states that on deletion of a author, the corresponding entry in cust_book is restricted therefore is not deleted
+        String returnString = "";
+        String findBook = "SELECT * FROM book WHERE isbn =" + isbn;
+        String deleteBook = "DELETE FROM book WHERE isbn =" + isbn;
+        String deleteBook_Author = "DELETE FROM book_author WHERE isbn = " + isbn;
+
+        PreparedStatement findStatement = null, deleteStatement = null, deleteBook_AuthorStatement = null;
+
+        try {
+            connection.setAutoCommit(false);
+            findStatement = connection.prepareStatement(findBook);
+
+//            Ensure book exists
+            if(findStatement.executeQuery().next()) {
+                deleteStatement = connection.prepareStatement(deleteBook);
+
+                if(deleteStatement.executeUpdate() == 0) {
+                    returnString = "Could not delete book";
+                }else {
+//                    Delete book from book_author
+                    deleteBook_AuthorStatement = connection.prepareStatement(deleteBook_Author);
+
+                    if(deleteBook_AuthorStatement.executeUpdate() == 0) {
+                        returnString = "Could not delete book reference in book_author";
+                    }else {
+                        connection.commit();
+                        findStatement.close();
+                        deleteStatement.close();
+                        deleteBook_AuthorStatement.close();
+                        return "book successfully deleted";
+                    }
+                }
+
+            } else {
+                returnString = "book does not exist";
+            }
+
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+            try {
+                connection.rollback();
+                if(findStatement != null) findStatement.close();
+                if(deleteStatement != null) deleteStatement.close();
+                if(deleteBook_AuthorStatement != null) deleteBook_AuthorStatement.close();
+                //connection.setReadOnly(true);
+            } catch (SQLException e1) {
+                e1.printStackTrace();
+            }
+            return e.getMessage();
+        }
+
+//                    Commit transaction
+        try {
+            connection.rollback();
+            if(findStatement != null) findStatement.close();
+            if(deleteStatement != null) deleteStatement.close();
+            if(deleteBook_AuthorStatement != null) deleteBook_AuthorStatement.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return returnString;
     }
 
+    /**
+     * Displays a confirmation dialog box.
+     * @param message to display to user
+     * @return selection
+     */
+    public int createConfirmDialog(String message) {
+        return showConfirmDialog(dialogParent, message, "Confirm", YES_OPTION);
+    }
 }

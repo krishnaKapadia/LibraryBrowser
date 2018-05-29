@@ -20,10 +20,7 @@ import static java.awt.event.KeyEvent.VK_E;
 import static java.awt.event.KeyEvent.VK_T;
 import static javax.swing.BoxLayout.X_AXIS;
 import static javax.swing.JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT;
-import static javax.swing.JOptionPane.ERROR_MESSAGE;
-import static javax.swing.JOptionPane.QUESTION_MESSAGE;
-import static javax.swing.JOptionPane.showInputDialog;
-import static javax.swing.JOptionPane.showMessageDialog;
+import static javax.swing.JOptionPane.*;
 import static javax.swing.JScrollPane.VERTICAL_SCROLLBAR_ALWAYS;
 import static javax.swing.KeyStroke.getKeyStroke;
 
@@ -160,6 +157,8 @@ public class LibraryUI extends JFrame {
         // Pack it all
         pack();
     }
+
+
 
     // By default the GridBagLayout stuffs up tab ordering for the
     // borrow book and return book panes, so I need this to ensure it's all
