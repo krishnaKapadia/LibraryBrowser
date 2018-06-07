@@ -2,35 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fea039b1-46ab-4630-9bd6-4d3c60b03b3f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Project 3/AuthDialog$1.class" afterPath="$PROJECT_DIR$/out/production/Project 3/AuthDialog$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Project 3/AuthDialog$2.class" afterPath="$PROJECT_DIR$/out/production/Project 3/AuthDialog$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Project 3/AuthDialog$3.class" afterPath="$PROJECT_DIR$/out/production/Project 3/AuthDialog$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Project 3/AuthDialog$4.class" afterPath="$PROJECT_DIR$/out/production/Project 3/AuthDialog$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Project 3/AuthDialog.class" afterPath="$PROJECT_DIR$/out/production/Project 3/AuthDialog.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Project 3/Readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Readme.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Project 3/LibraryModel.class" afterPath="$PROJECT_DIR$/out/production/Project 3/LibraryModel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Project 3/LibraryUI$1.class" afterPath="$PROJECT_DIR$/out/production/Project 3/LibraryUI$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Project 3/LibraryUI$2.class" afterPath="$PROJECT_DIR$/out/production/Project 3/LibraryUI$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Project 3/LibraryUI$BookLookupAction.class" afterPath="$PROJECT_DIR$/out/production/Project 3/LibraryUI$BookLookupAction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Project 3/LibraryUI$BorrowAction.class" afterPath="$PROJECT_DIR$/out/production/Project 3/LibraryUI$BorrowAction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Project 3/LibraryUI$CatchAction.class" afterPath="$PROJECT_DIR$/out/production/Project 3/LibraryUI$CatchAction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Project 3/LibraryUI$ClearTextAction.class" afterPath="$PROJECT_DIR$/out/production/Project 3/LibraryUI$ClearTextAction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Project 3/LibraryUI$DeleteAuthorAction.class" afterPath="$PROJECT_DIR$/out/production/Project 3/LibraryUI$DeleteAuthorAction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Project 3/LibraryUI$DeleteBookAction.class" afterPath="$PROJECT_DIR$/out/production/Project 3/LibraryUI$DeleteBookAction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Project 3/LibraryUI$DeleteCustomerAction.class" afterPath="$PROJECT_DIR$/out/production/Project 3/LibraryUI$DeleteCustomerAction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Project 3/LibraryUI$ExitAction.class" afterPath="$PROJECT_DIR$/out/production/Project 3/LibraryUI$ExitAction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Project 3/LibraryUI$LookupAction.class" afterPath="$PROJECT_DIR$/out/production/Project 3/LibraryUI$LookupAction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Project 3/LibraryUI$ReturnAction.class" afterPath="$PROJECT_DIR$/out/production/Project 3/LibraryUI$ReturnAction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Project 3/LibraryUI$ShowAllAuthorsAction.class" afterPath="$PROJECT_DIR$/out/production/Project 3/LibraryUI$ShowAllAuthorsAction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Project 3/LibraryUI$ShowAllCustomersAction.class" afterPath="$PROJECT_DIR$/out/production/Project 3/LibraryUI$ShowAllCustomersAction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Project 3/LibraryUI$ShowAuthorAction.class" afterPath="$PROJECT_DIR$/out/production/Project 3/LibraryUI$ShowAuthorAction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Project 3/LibraryUI$ShowCatalogueAction.class" afterPath="$PROJECT_DIR$/out/production/Project 3/LibraryUI$ShowCatalogueAction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Project 3/LibraryUI$ShowCustomerAction.class" afterPath="$PROJECT_DIR$/out/production/Project 3/LibraryUI$ShowCustomerAction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Project 3/LibraryUI$ShowLoanedBooksAction.class" afterPath="$PROJECT_DIR$/out/production/Project 3/LibraryUI$ShowLoanedBooksAction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Project 3/LibraryUI.class" afterPath="$PROJECT_DIR$/out/production/Project 3/LibraryUI.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Project 3/MapFocusTraversalPolicy.class" afterPath="$PROJECT_DIR$/out/production/Project 3/MapFocusTraversalPolicy.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/LibraryModel.java" afterPath="$PROJECT_DIR$/src/LibraryModel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/LibraryUI.java" afterPath="$PROJECT_DIR$/src/LibraryUI.java" />
     </list>
     <ignored path="Project 3.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -168,43 +144,96 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="LibraryModel.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LibraryModel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/LibraryModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6334012">
-              <caret line="479" column="16" selection-start-line="479" selection-start-column="16" selection-end-line="479" selection-end-column="16" />
+            <state vertical-scroll-proportion="-10.666667">
+              <caret line="291" column="67" selection-start-line="291" selection-start-column="67" selection-end-line="291" selection-end-column="67" />
               <folding>
-                <element signature="e#0#25057#0" expanded="true" />
+                <element signature="e#0#25582#0" expanded="true" />
                 <element signature="imports" expanded="true" />
                 <element signature="method#returnBook#0;class#LibraryModel#0" expanded="false" />
                 <element signature="method#closeDBConnection#0;class#LibraryModel#0" expanded="false" />
-                <element signature="method#deleteCus#0;class#LibraryModel#0" expanded="false" />
-                <element signature="method#deleteAuthor#0;class#LibraryModel#0" expanded="false" />
-                <element signature="method#deleteBook#0;class#LibraryModel#0" expanded="false" />
-                <marker date="1527569105000" expanded="true" signature="1884:1915" placeholder="SELECT * FRO... book" />
-                <marker date="1527569105000" expanded="true" signature="2666:2684" placeholder="SELECT * FRO... book" />
-                <marker date="1527569105000" expanded="true" signature="3469:3526" placeholder="SELECT * FRO... book" />
-                <marker date="1527569105000" expanded="true" signature="4378:4415" placeholder="SELECT * FRO... author" />
-                <marker date="1527569105000" expanded="true" signature="5182:5202" placeholder="SELECT * FRO... author" />
-                <marker date="1527569105000" expanded="true" signature="6066:6107" placeholder="SELECT * FRO... customer" />
-                <marker date="1527569105000" expanded="true" signature="6879:6901" placeholder="SELECT * FRO... customer" />
-                <marker date="1527569105000" expanded="true" signature="10571:10612" placeholder="SELECT * FRO... customer" />
-                <marker date="1527569105000" expanded="true" signature="10655:10715" placeholder="SELECT * FRO... book" />
-                <marker date="1527569105000" expanded="true" signature="10747:10812" placeholder="INSERT INTO cust_book... " />
-                <marker date="1527569105000" expanded="true" signature="10844:10924" placeholder="UPDATE book " />
-                <marker date="1527569105000" expanded="true" signature="14361:14402" placeholder="SELECT * FRO... customer" />
-                <marker date="1527569105000" expanded="true" signature="14445:14482" placeholder="SELECT * FRO... cust_book" />
-                <marker date="1527569105000" expanded="true" signature="14524:14589" placeholder="DELETE FROM " />
-                <marker date="1527569105000" expanded="true" signature="14634:14685" placeholder="UPDATE book " />
-                <marker date="1527569105000" expanded="true" signature="14634:14720" placeholder="UPDATE book " />
-                <marker date="1527569105000" expanded="true" signature="18335:18376" placeholder="SELECT * FRO... customer" />
-                <marker date="1527569105000" expanded="true" signature="18425:18464" placeholder="DELETE FROM " />
-                <marker date="1527569105000" expanded="true" signature="20412:20449" placeholder="SELECT * FRO... customer" />
-                <marker date="1527569105000" expanded="true" signature="20496:20531" placeholder="DELETE FROM " />
-                <marker date="1527569105000" expanded="true" signature="22357:22388" placeholder="SELECT * FRO... author" />
-                <marker date="1527569105000" expanded="true" signature="22427:22456" placeholder="DELETE FROM " />
-                <marker date="1527569105000" expanded="true" signature="22502:22539" placeholder="DELETE FROM " />
+                <marker date="1528352106000" expanded="true" signature="1884:1915" placeholder="SELECT * FRO... book" />
+                <marker date="1528352106000" expanded="true" signature="2711:2729" placeholder="SELECT * FRO... book" />
+                <marker date="1528352106000" expanded="true" signature="3559:3616" placeholder="SELECT * FRO... book" />
+                <marker date="1528352106000" expanded="true" signature="4475:4512" placeholder="SELECT * FRO... author" />
+                <marker date="1528352106000" expanded="true" signature="5279:5299" placeholder="SELECT * FRO... author" />
+                <marker date="1528352106000" expanded="true" signature="6163:6204" placeholder="SELECT * FRO... customer" />
+                <marker date="1528352106000" expanded="true" signature="6976:6998" placeholder="SELECT * FRO... customer" />
+                <marker date="1528352106000" expanded="true" signature="10004:10049" placeholder="SELECT * FRO... book_author" />
+                <marker date="1528352106000" expanded="true" signature="10004:10095" placeholder="SELECT autho... book_author" />
+                <marker date="1528352106000" expanded="true" signature="11163:11204" placeholder="SELECT * FRO... customer" />
+                <marker date="1528352106000" expanded="true" signature="11163:11226" placeholder="SELECT * FRO... customer" />
+                <marker date="1528352106000" expanded="true" signature="11163:11233" placeholder="SELECT * FRO... customer" />
+                <marker date="1528352106000" expanded="true" signature="11263:11323" placeholder="SELECT * FRO... book" />
+                <marker date="1528352106000" expanded="true" signature="11263:11334" placeholder="SELECT * FRO... book" />
+                <marker date="1528352106000" expanded="true" signature="11263:11335" placeholder="SELECT * FRO... book" />
+                <marker date="1528352106000" expanded="true" signature="11366:11431" placeholder="INSERT INTO cust_book... " />
+                <marker date="1528352106000" expanded="true" signature="11463:11543" placeholder="UPDATE book " />
+                <marker date="1528352106000" expanded="true" signature="14980:15021" placeholder="SELECT * FRO... customer" />
+                <marker date="1528352106000" expanded="true" signature="15064:15101" placeholder="SELECT * FRO... cust_book" />
+                <marker date="1528352106000" expanded="true" signature="15143:15208" placeholder="DELETE FROM " />
+                <marker date="1528352106000" expanded="true" signature="15253:15304" placeholder="UPDATE book " />
+                <marker date="1528352106000" expanded="true" signature="15253:15339" placeholder="UPDATE book " />
+                <marker date="1528352106000" expanded="true" signature="18954:18995" placeholder="SELECT * FRO... customer" />
+                <marker date="1528352106000" expanded="true" signature="18954:19025" placeholder="SELECT * FRO... customer" />
+                <marker date="1528352106000" expanded="true" signature="19061:19100" placeholder="DELETE FROM " />
+                <marker date="1528352106000" expanded="true" signature="19061:19114" placeholder="DELETE FROM " />
+                <marker date="1528352106000" expanded="true" signature="21030:21067" placeholder="SELECT * FRO... customer" />
+                <marker date="1528352106000" expanded="true" signature="21030:21094" placeholder="SELECT * FRO... author" />
+                <marker date="1528352106000" expanded="true" signature="21130:21165" placeholder="DELETE FROM " />
+                <marker date="1528352106000" expanded="true" signature="22850:22881" placeholder="SELECT * FRO... author" />
+                <marker date="1528352106000" expanded="true" signature="22850:22904" placeholder="SELECT * FRO... book" />
+                <marker date="1528352106000" expanded="true" signature="22936:22965" placeholder="DELETE FROM " />
+                <marker date="1528352106000" expanded="true" signature="23013:23050" placeholder="DELETE FROM " />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Readme.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Readme.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
+            <state split_layout="FIRST">
+              <first_editor vertical-scroll-proportion="0.088452086">
+                <caret line="2" column="50" selection-start-line="2" selection-start-column="50" selection-end-line="2" selection-end-column="50" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+          <provider editor-type-id="MultiMarkdownFxPreviewEditor">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="kapadikris_jdbc.public.book" pinned="false" current-in-tab="false">
+        <entry file="dbDummy://dbtable:/a0aa8927/af6f80fd-afcd-434d-959b-c5f08e89d4b8/kapadikris_jdbc.public.book">
+          <provider editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="kapadikris_jdbc.public.cust_book" pinned="false" current-in-tab="false">
+        <entry file="dbDummy://dbtable:/a0aa8927/af6f80fd-afcd-434d-959b-c5f08e89d4b8/kapadikris_jdbc.public.cust_book">
+          <provider editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
@@ -225,7 +254,6 @@
             <state vertical-scroll-proportion="0.0">
               <caret line="160" column="0" selection-start-line="160" selection-start-column="0" selection-end-line="160" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="true" />
                 <element signature="method#initFocusTraversalPolicy#0;class#LibraryUI#0" expanded="false" />
                 <element signature="method#createBookPane#0;class#LibraryUI#0" expanded="false" />
               </folding>
@@ -270,6 +298,7 @@
         <option value="$PROJECT_DIR$/src/LibraryUI.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/af6f80fd-afcd-434d-959b-c5f08e89d4b8/console.sql" />
         <option value="$PROJECT_DIR$/src/LibraryModel.java" />
+        <option value="$PROJECT_DIR$/src/Readme.md" />
       </list>
     </option>
   </component>
@@ -285,10 +314,13 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="PhpServers">
+    <servers />
+  </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="width" value="1920" />
-    <option name="height" value="1080" />
+    <option name="width" value="1280" />
+    <option name="height" value="800" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -349,9 +381,9 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -814,6 +846,11 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -847,31 +884,33 @@
       <created>1527410947237</created>
       <option name="number" value="Default" />
       <updated>1527410947237</updated>
-      <workItem from="1527470167731" duration="29440000" />
+      <workItem from="1527470167731" duration="30036000" />
+      <workItem from="1527831714526" duration="3868000" />
+      <workItem from="1528255343858" duration="47000" />
+      <workItem from="1528349528417" duration="2443000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29440000" />
+    <option name="totallyTimeSpent" value="36394000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
+    <frame x="0" y="0" width="1280" height="800" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970297" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17722772" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23762377" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32871288" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17671233" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32739726" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10383387" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21352503" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970297" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15751211" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26655897" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -886,6 +925,7 @@
       <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970297" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -915,46 +955,60 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#25057#0" expanded="true" />
+            <element signature="e#0#25582#0" expanded="true" />
             <element signature="imports" expanded="true" />
             <element signature="method#returnBook#0;class#LibraryModel#0" expanded="false" />
             <element signature="method#closeDBConnection#0;class#LibraryModel#0" expanded="false" />
-            <element signature="method#deleteCus#0;class#LibraryModel#0" expanded="false" />
-            <element signature="method#deleteAuthor#0;class#LibraryModel#0" expanded="false" />
-            <element signature="method#deleteBook#0;class#LibraryModel#0" expanded="false" />
-            <marker date="1527569105000" expanded="true" signature="1884:1915" placeholder="SELECT * FRO... book" />
-            <marker date="1527569105000" expanded="true" signature="2666:2684" placeholder="SELECT * FRO... book" />
-            <marker date="1527569105000" expanded="true" signature="3469:3526" placeholder="SELECT * FRO... book" />
-            <marker date="1527569105000" expanded="true" signature="4378:4415" placeholder="SELECT * FRO... author" />
-            <marker date="1527569105000" expanded="true" signature="5182:5202" placeholder="SELECT * FRO... author" />
-            <marker date="1527569105000" expanded="true" signature="6066:6107" placeholder="SELECT * FRO... customer" />
-            <marker date="1527569105000" expanded="true" signature="6879:6901" placeholder="SELECT * FRO... customer" />
-            <marker date="1527569105000" expanded="true" signature="10571:10612" placeholder="SELECT * FRO... customer" />
-            <marker date="1527569105000" expanded="true" signature="10655:10715" placeholder="SELECT * FRO... book" />
-            <marker date="1527569105000" expanded="true" signature="10747:10812" placeholder="INSERT INTO cust_book... " />
-            <marker date="1527569105000" expanded="true" signature="10844:10924" placeholder="UPDATE book " />
-            <marker date="1527569105000" expanded="true" signature="14361:14402" placeholder="SELECT * FRO... customer" />
-            <marker date="1527569105000" expanded="true" signature="14445:14482" placeholder="SELECT * FRO... cust_book" />
-            <marker date="1527569105000" expanded="true" signature="14524:14589" placeholder="DELETE FROM " />
-            <marker date="1527569105000" expanded="true" signature="14634:14685" placeholder="UPDATE book " />
-            <marker date="1527569105000" expanded="true" signature="14634:14720" placeholder="UPDATE book " />
-            <marker date="1527569105000" expanded="true" signature="18335:18376" placeholder="SELECT * FRO... customer" />
-            <marker date="1527569105000" expanded="true" signature="18425:18464" placeholder="DELETE FROM " />
-            <marker date="1527569105000" expanded="true" signature="20412:20449" placeholder="SELECT * FRO... customer" />
-            <marker date="1527569105000" expanded="true" signature="20496:20531" placeholder="DELETE FROM " />
-            <marker date="1527569105000" expanded="true" signature="22357:22388" placeholder="SELECT * FRO... author" />
-            <marker date="1527569105000" expanded="true" signature="22427:22456" placeholder="DELETE FROM " />
-            <marker date="1527569105000" expanded="true" signature="22502:22539" placeholder="DELETE FROM " />
+            <marker date="1528352106000" expanded="true" signature="1884:1915" placeholder="SELECT * FRO... book" />
+            <marker date="1528352106000" expanded="true" signature="2711:2729" placeholder="SELECT * FRO... book" />
+            <marker date="1528352106000" expanded="true" signature="3559:3616" placeholder="SELECT * FRO... book" />
+            <marker date="1528352106000" expanded="true" signature="4475:4512" placeholder="SELECT * FRO... author" />
+            <marker date="1528352106000" expanded="true" signature="5279:5299" placeholder="SELECT * FRO... author" />
+            <marker date="1528352106000" expanded="true" signature="6163:6204" placeholder="SELECT * FRO... customer" />
+            <marker date="1528352106000" expanded="true" signature="6976:6998" placeholder="SELECT * FRO... customer" />
+            <marker date="1528352106000" expanded="true" signature="10004:10049" placeholder="SELECT * FRO... book_author" />
+            <marker date="1528352106000" expanded="true" signature="10004:10095" placeholder="SELECT autho... book_author" />
+            <marker date="1528352106000" expanded="true" signature="11163:11204" placeholder="SELECT * FRO... customer" />
+            <marker date="1528352106000" expanded="true" signature="11163:11226" placeholder="SELECT * FRO... customer" />
+            <marker date="1528352106000" expanded="true" signature="11163:11233" placeholder="SELECT * FRO... customer" />
+            <marker date="1528352106000" expanded="true" signature="11263:11323" placeholder="SELECT * FRO... book" />
+            <marker date="1528352106000" expanded="true" signature="11263:11334" placeholder="SELECT * FRO... book" />
+            <marker date="1528352106000" expanded="true" signature="11263:11335" placeholder="SELECT * FRO... book" />
+            <marker date="1528352106000" expanded="true" signature="11366:11431" placeholder="INSERT INTO cust_book... " />
+            <marker date="1528352106000" expanded="true" signature="11463:11543" placeholder="UPDATE book " />
+            <marker date="1528352106000" expanded="true" signature="14980:15021" placeholder="SELECT * FRO... customer" />
+            <marker date="1528352106000" expanded="true" signature="15064:15101" placeholder="SELECT * FRO... cust_book" />
+            <marker date="1528352106000" expanded="true" signature="15143:15208" placeholder="DELETE FROM " />
+            <marker date="1528352106000" expanded="true" signature="15253:15304" placeholder="UPDATE book " />
+            <marker date="1528352106000" expanded="true" signature="15253:15339" placeholder="UPDATE book " />
+            <marker date="1528352106000" expanded="true" signature="18954:18995" placeholder="SELECT * FRO... customer" />
+            <marker date="1528352106000" expanded="true" signature="18954:19025" placeholder="SELECT * FRO... customer" />
+            <marker date="1528352106000" expanded="true" signature="19061:19100" placeholder="DELETE FROM " />
+            <marker date="1528352106000" expanded="true" signature="19061:19114" placeholder="DELETE FROM " />
+            <marker date="1528352106000" expanded="true" signature="21030:21067" placeholder="SELECT * FRO... customer" />
+            <marker date="1528352106000" expanded="true" signature="21030:21094" placeholder="SELECT * FRO... author" />
+            <marker date="1528352106000" expanded="true" signature="21130:21165" placeholder="DELETE FROM " />
+            <marker date="1528352106000" expanded="true" signature="22850:22881" placeholder="SELECT * FRO... author" />
+            <marker date="1528352106000" expanded="true" signature="22850:22904" placeholder="SELECT * FRO... book" />
+            <marker date="1528352106000" expanded="true" signature="22936:22965" placeholder="DELETE FROM " />
+            <marker date="1528352106000" expanded="true" signature="23013:23050" placeholder="DELETE FROM " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_73.jdk/Contents/Home/src.zip!/javax/swing/JOptionPane.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="722" column="58" selection-start-line="722" selection-start-column="58" selection-end-line="722" selection-end-column="58" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LibraryUI.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="56" column="31" selection-start-line="56" selection-start-column="31" selection-end-line="56" selection-end-column="31" />
+          <caret line="160" column="0" selection-start-line="160" selection-start-column="0" selection-end-line="160" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="method#initFocusTraversalPolicy#0;class#LibraryUI#0" expanded="false" />
             <element signature="method#createBookPane#0;class#LibraryUI#0" expanded="false" />
           </folding>
@@ -966,36 +1020,108 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#25057#0" expanded="true" />
+            <element signature="e#0#25582#0" expanded="true" />
             <element signature="imports" expanded="true" />
             <element signature="method#returnBook#0;class#LibraryModel#0" expanded="false" />
             <element signature="method#closeDBConnection#0;class#LibraryModel#0" expanded="false" />
-            <element signature="method#deleteCus#0;class#LibraryModel#0" expanded="false" />
-            <element signature="method#deleteAuthor#0;class#LibraryModel#0" expanded="false" />
-            <element signature="method#deleteBook#0;class#LibraryModel#0" expanded="false" />
-            <marker date="1527569105000" expanded="true" signature="1884:1915" placeholder="SELECT * FRO... book" />
-            <marker date="1527569105000" expanded="true" signature="2666:2684" placeholder="SELECT * FRO... book" />
-            <marker date="1527569105000" expanded="true" signature="3469:3526" placeholder="SELECT * FRO... book" />
-            <marker date="1527569105000" expanded="true" signature="4378:4415" placeholder="SELECT * FRO... author" />
-            <marker date="1527569105000" expanded="true" signature="5182:5202" placeholder="SELECT * FRO... author" />
-            <marker date="1527569105000" expanded="true" signature="6066:6107" placeholder="SELECT * FRO... customer" />
-            <marker date="1527569105000" expanded="true" signature="6879:6901" placeholder="SELECT * FRO... customer" />
-            <marker date="1527569105000" expanded="true" signature="10571:10612" placeholder="SELECT * FRO... customer" />
-            <marker date="1527569105000" expanded="true" signature="10655:10715" placeholder="SELECT * FRO... book" />
-            <marker date="1527569105000" expanded="true" signature="10747:10812" placeholder="INSERT INTO cust_book... " />
-            <marker date="1527569105000" expanded="true" signature="10844:10924" placeholder="UPDATE book " />
-            <marker date="1527569105000" expanded="true" signature="14361:14402" placeholder="SELECT * FRO... customer" />
-            <marker date="1527569105000" expanded="true" signature="14445:14482" placeholder="SELECT * FRO... cust_book" />
-            <marker date="1527569105000" expanded="true" signature="14524:14589" placeholder="DELETE FROM " />
-            <marker date="1527569105000" expanded="true" signature="14634:14685" placeholder="UPDATE book " />
-            <marker date="1527569105000" expanded="true" signature="14634:14720" placeholder="UPDATE book " />
-            <marker date="1527569105000" expanded="true" signature="18335:18376" placeholder="SELECT * FRO... customer" />
-            <marker date="1527569105000" expanded="true" signature="18425:18464" placeholder="DELETE FROM " />
-            <marker date="1527569105000" expanded="true" signature="20412:20449" placeholder="SELECT * FRO... customer" />
-            <marker date="1527569105000" expanded="true" signature="20496:20531" placeholder="DELETE FROM " />
-            <marker date="1527569105000" expanded="true" signature="22357:22388" placeholder="SELECT * FRO... author" />
-            <marker date="1527569105000" expanded="true" signature="22427:22456" placeholder="DELETE FROM " />
-            <marker date="1527569105000" expanded="true" signature="22502:22539" placeholder="DELETE FROM " />
+            <marker date="1528352106000" expanded="true" signature="1884:1915" placeholder="SELECT * FRO... book" />
+            <marker date="1528352106000" expanded="true" signature="2711:2729" placeholder="SELECT * FRO... book" />
+            <marker date="1528352106000" expanded="true" signature="3559:3616" placeholder="SELECT * FRO... book" />
+            <marker date="1528352106000" expanded="true" signature="4475:4512" placeholder="SELECT * FRO... author" />
+            <marker date="1528352106000" expanded="true" signature="5279:5299" placeholder="SELECT * FRO... author" />
+            <marker date="1528352106000" expanded="true" signature="6163:6204" placeholder="SELECT * FRO... customer" />
+            <marker date="1528352106000" expanded="true" signature="6976:6998" placeholder="SELECT * FRO... customer" />
+            <marker date="1528352106000" expanded="true" signature="10004:10049" placeholder="SELECT * FRO... book_author" />
+            <marker date="1528352106000" expanded="true" signature="10004:10095" placeholder="SELECT autho... book_author" />
+            <marker date="1528352106000" expanded="true" signature="11163:11204" placeholder="SELECT * FRO... customer" />
+            <marker date="1528352106000" expanded="true" signature="11163:11226" placeholder="SELECT * FRO... customer" />
+            <marker date="1528352106000" expanded="true" signature="11163:11233" placeholder="SELECT * FRO... customer" />
+            <marker date="1528352106000" expanded="true" signature="11263:11323" placeholder="SELECT * FRO... book" />
+            <marker date="1528352106000" expanded="true" signature="11263:11334" placeholder="SELECT * FRO... book" />
+            <marker date="1528352106000" expanded="true" signature="11263:11335" placeholder="SELECT * FRO... book" />
+            <marker date="1528352106000" expanded="true" signature="11366:11431" placeholder="INSERT INTO cust_book... " />
+            <marker date="1528352106000" expanded="true" signature="11463:11543" placeholder="UPDATE book " />
+            <marker date="1528352106000" expanded="true" signature="14980:15021" placeholder="SELECT * FRO... customer" />
+            <marker date="1528352106000" expanded="true" signature="15064:15101" placeholder="SELECT * FRO... cust_book" />
+            <marker date="1528352106000" expanded="true" signature="15143:15208" placeholder="DELETE FROM " />
+            <marker date="1528352106000" expanded="true" signature="15253:15304" placeholder="UPDATE book " />
+            <marker date="1528352106000" expanded="true" signature="15253:15339" placeholder="UPDATE book " />
+            <marker date="1528352106000" expanded="true" signature="18954:18995" placeholder="SELECT * FRO... customer" />
+            <marker date="1528352106000" expanded="true" signature="18954:19025" placeholder="SELECT * FRO... customer" />
+            <marker date="1528352106000" expanded="true" signature="19061:19100" placeholder="DELETE FROM " />
+            <marker date="1528352106000" expanded="true" signature="19061:19114" placeholder="DELETE FROM " />
+            <marker date="1528352106000" expanded="true" signature="21030:21067" placeholder="SELECT * FRO... customer" />
+            <marker date="1528352106000" expanded="true" signature="21030:21094" placeholder="SELECT * FRO... author" />
+            <marker date="1528352106000" expanded="true" signature="21130:21165" placeholder="DELETE FROM " />
+            <marker date="1528352106000" expanded="true" signature="22850:22881" placeholder="SELECT * FRO... author" />
+            <marker date="1528352106000" expanded="true" signature="22850:22904" placeholder="SELECT * FRO... book" />
+            <marker date="1528352106000" expanded="true" signature="22936:22965" placeholder="DELETE FROM " />
+            <marker date="1528352106000" expanded="true" signature="23013:23050" placeholder="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_73.jdk/Contents/Home/src.zip!/javax/swing/JOptionPane.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="722" column="58" selection-start-line="722" selection-start-column="58" selection-end-line="722" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LibraryUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="160" column="0" selection-start-line="160" selection-start-column="0" selection-end-line="160" selection-end-column="0" />
+          <folding>
+            <element signature="method#initFocusTraversalPolicy#0;class#LibraryUI#0" expanded="false" />
+            <element signature="method#createBookPane#0;class#LibraryUI#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LibraryModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#25582#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="method#returnBook#0;class#LibraryModel#0" expanded="false" />
+            <element signature="method#closeDBConnection#0;class#LibraryModel#0" expanded="false" />
+            <marker date="1528352106000" expanded="true" signature="1884:1915" placeholder="SELECT * FRO... book" />
+            <marker date="1528352106000" expanded="true" signature="2711:2729" placeholder="SELECT * FRO... book" />
+            <marker date="1528352106000" expanded="true" signature="3559:3616" placeholder="SELECT * FRO... book" />
+            <marker date="1528352106000" expanded="true" signature="4475:4512" placeholder="SELECT * FRO... author" />
+            <marker date="1528352106000" expanded="true" signature="5279:5299" placeholder="SELECT * FRO... author" />
+            <marker date="1528352106000" expanded="true" signature="6163:6204" placeholder="SELECT * FRO... customer" />
+            <marker date="1528352106000" expanded="true" signature="6976:6998" placeholder="SELECT * FRO... customer" />
+            <marker date="1528352106000" expanded="true" signature="10004:10049" placeholder="SELECT * FRO... book_author" />
+            <marker date="1528352106000" expanded="true" signature="10004:10095" placeholder="SELECT autho... book_author" />
+            <marker date="1528352106000" expanded="true" signature="11163:11204" placeholder="SELECT * FRO... customer" />
+            <marker date="1528352106000" expanded="true" signature="11163:11226" placeholder="SELECT * FRO... customer" />
+            <marker date="1528352106000" expanded="true" signature="11163:11233" placeholder="SELECT * FRO... customer" />
+            <marker date="1528352106000" expanded="true" signature="11263:11323" placeholder="SELECT * FRO... book" />
+            <marker date="1528352106000" expanded="true" signature="11263:11334" placeholder="SELECT * FRO... book" />
+            <marker date="1528352106000" expanded="true" signature="11263:11335" placeholder="SELECT * FRO... book" />
+            <marker date="1528352106000" expanded="true" signature="11366:11431" placeholder="INSERT INTO cust_book... " />
+            <marker date="1528352106000" expanded="true" signature="11463:11543" placeholder="UPDATE book " />
+            <marker date="1528352106000" expanded="true" signature="14980:15021" placeholder="SELECT * FRO... customer" />
+            <marker date="1528352106000" expanded="true" signature="15064:15101" placeholder="SELECT * FRO... cust_book" />
+            <marker date="1528352106000" expanded="true" signature="15143:15208" placeholder="DELETE FROM " />
+            <marker date="1528352106000" expanded="true" signature="15253:15304" placeholder="UPDATE book " />
+            <marker date="1528352106000" expanded="true" signature="15253:15339" placeholder="UPDATE book " />
+            <marker date="1528352106000" expanded="true" signature="18954:18995" placeholder="SELECT * FRO... customer" />
+            <marker date="1528352106000" expanded="true" signature="18954:19025" placeholder="SELECT * FRO... customer" />
+            <marker date="1528352106000" expanded="true" signature="19061:19100" placeholder="DELETE FROM " />
+            <marker date="1528352106000" expanded="true" signature="19061:19114" placeholder="DELETE FROM " />
+            <marker date="1528352106000" expanded="true" signature="21030:21067" placeholder="SELECT * FRO... customer" />
+            <marker date="1528352106000" expanded="true" signature="21030:21094" placeholder="SELECT * FRO... author" />
+            <marker date="1528352106000" expanded="true" signature="21130:21165" placeholder="DELETE FROM " />
+            <marker date="1528352106000" expanded="true" signature="22850:22881" placeholder="SELECT * FRO... author" />
+            <marker date="1528352106000" expanded="true" signature="22850:22904" placeholder="SELECT * FRO... book" />
+            <marker date="1528352106000" expanded="true" signature="22936:22965" placeholder="DELETE FROM " />
+            <marker date="1528352106000" expanded="true" signature="23013:23050" placeholder="DELETE FROM " />
           </folding>
         </state>
       </provider>
@@ -1005,7 +1131,63 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="56" column="31" selection-start-line="56" selection-start-column="31" selection-end-line="56" selection-end-column="31" />
           <folding>
+            <element signature="method#initFocusTraversalPolicy#0;class#LibraryUI#0" expanded="false" />
+            <element signature="method#createBookPane#0;class#LibraryUI#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LibraryModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#25582#0" expanded="true" />
             <element signature="imports" expanded="true" />
+            <element signature="method#returnBook#0;class#LibraryModel#0" expanded="false" />
+            <element signature="method#closeDBConnection#0;class#LibraryModel#0" expanded="false" />
+            <marker date="1528352106000" expanded="true" signature="1884:1915" placeholder="SELECT * FRO... book" />
+            <marker date="1528352106000" expanded="true" signature="2711:2729" placeholder="SELECT * FRO... book" />
+            <marker date="1528352106000" expanded="true" signature="3559:3616" placeholder="SELECT * FRO... book" />
+            <marker date="1528352106000" expanded="true" signature="4475:4512" placeholder="SELECT * FRO... author" />
+            <marker date="1528352106000" expanded="true" signature="5279:5299" placeholder="SELECT * FRO... author" />
+            <marker date="1528352106000" expanded="true" signature="6163:6204" placeholder="SELECT * FRO... customer" />
+            <marker date="1528352106000" expanded="true" signature="6976:6998" placeholder="SELECT * FRO... customer" />
+            <marker date="1528352106000" expanded="true" signature="10004:10049" placeholder="SELECT * FRO... book_author" />
+            <marker date="1528352106000" expanded="true" signature="10004:10095" placeholder="SELECT autho... book_author" />
+            <marker date="1528352106000" expanded="true" signature="11163:11204" placeholder="SELECT * FRO... customer" />
+            <marker date="1528352106000" expanded="true" signature="11163:11226" placeholder="SELECT * FRO... customer" />
+            <marker date="1528352106000" expanded="true" signature="11163:11233" placeholder="SELECT * FRO... customer" />
+            <marker date="1528352106000" expanded="true" signature="11263:11323" placeholder="SELECT * FRO... book" />
+            <marker date="1528352106000" expanded="true" signature="11263:11334" placeholder="SELECT * FRO... book" />
+            <marker date="1528352106000" expanded="true" signature="11263:11335" placeholder="SELECT * FRO... book" />
+            <marker date="1528352106000" expanded="true" signature="11366:11431" placeholder="INSERT INTO cust_book... " />
+            <marker date="1528352106000" expanded="true" signature="11463:11543" placeholder="UPDATE book " />
+            <marker date="1528352106000" expanded="true" signature="14980:15021" placeholder="SELECT * FRO... customer" />
+            <marker date="1528352106000" expanded="true" signature="15064:15101" placeholder="SELECT * FRO... cust_book" />
+            <marker date="1528352106000" expanded="true" signature="15143:15208" placeholder="DELETE FROM " />
+            <marker date="1528352106000" expanded="true" signature="15253:15304" placeholder="UPDATE book " />
+            <marker date="1528352106000" expanded="true" signature="15253:15339" placeholder="UPDATE book " />
+            <marker date="1528352106000" expanded="true" signature="18954:18995" placeholder="SELECT * FRO... customer" />
+            <marker date="1528352106000" expanded="true" signature="18954:19025" placeholder="SELECT * FRO... customer" />
+            <marker date="1528352106000" expanded="true" signature="19061:19100" placeholder="DELETE FROM " />
+            <marker date="1528352106000" expanded="true" signature="19061:19114" placeholder="DELETE FROM " />
+            <marker date="1528352106000" expanded="true" signature="21030:21067" placeholder="SELECT * FRO... customer" />
+            <marker date="1528352106000" expanded="true" signature="21030:21094" placeholder="SELECT * FRO... author" />
+            <marker date="1528352106000" expanded="true" signature="21130:21165" placeholder="DELETE FROM " />
+            <marker date="1528352106000" expanded="true" signature="22850:22881" placeholder="SELECT * FRO... author" />
+            <marker date="1528352106000" expanded="true" signature="22850:22904" placeholder="SELECT * FRO... book" />
+            <marker date="1528352106000" expanded="true" signature="22936:22965" placeholder="DELETE FROM " />
+            <marker date="1528352106000" expanded="true" signature="23013:23050" placeholder="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LibraryUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="56" column="31" selection-start-line="56" selection-start-column="31" selection-end-line="56" selection-end-column="31" />
+          <folding>
             <element signature="method#initFocusTraversalPolicy#0;class#LibraryUI#0" expanded="false" />
             <element signature="method#createBookPane#0;class#LibraryUI#0" expanded="false" />
           </folding>
@@ -1016,7 +1198,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4090909">
           <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1036,29 +1217,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/a0aa8927/af6f80fd-afcd-434d-959b-c5f08e89d4b8/kapadikris_jdbc.public.author">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="dbDummy://dbtable:/a0aa8927/af6f80fd-afcd-434d-959b-c5f08e89d4b8/kapadikris_jdbc.public.customer">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -1067,6 +1234,33 @@
         <state vertical-scroll-proportion="-0.12803234">
           <caret line="431" column="33" selection-start-line="431" selection-start-column="33" selection-end-line="431" selection-end-column="33" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_73.jdk/Contents/Home/src.zip!/java/sql/PreparedStatement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.52615386">
+          <caret line="94" column="8" selection-start-line="94" selection-start-column="8" selection-end-line="94" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../Assignments/Assignment 3/Project2_18.data">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.17932752">
+          <caret line="79" column="39" selection-start-line="79" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/a0aa8927/af6f80fd-afcd-434d-959b-c5f08e89d4b8/kapadikris_jdbc.public.author">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -1083,100 +1277,117 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="160" column="0" selection-start-line="160" selection-start-column="0" selection-end-line="160" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="method#initFocusTraversalPolicy#0;class#LibraryUI#0" expanded="false" />
             <element signature="method#createBookPane#0;class#LibraryUI#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_73.jdk/Contents/Home/src.zip!/java/sql/PreparedStatement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.52615386">
-          <caret line="94" column="8" selection-start-line="94" selection-start-column="8" selection-end-line="94" selection-end-column="8" />
+    <entry file="dbDummy://dbtable:/a0aa8927/af6f80fd-afcd-434d-959b-c5f08e89d4b8/kapadikris_jdbc.public.cust_book">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/a0aa8927/af6f80fd-afcd-434d-959b-c5f08e89d4b8/kapadikris_jdbc.public.book">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/af6f80fd-afcd-434d-959b-c5f08e89d4b8/console.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="54" selection-start-line="0" selection-start-column="54" selection-end-line="0" selection-end-column="54" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="66" selection-start-line="0" selection-start-column="46" selection-end-line="0" selection-end-column="66" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../../Assignments/Assignment 3/Project2_18.data">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17932752">
-          <caret line="79" column="39" selection-start-line="79" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/a0aa8927/af6f80fd-afcd-434d-959b-c5f08e89d4b8/kapadikris_jdbc.public.cust_book">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
+    <entry file="dbDummy://dbtable:/a0aa8927/af6f80fd-afcd-434d-959b-c5f08e89d4b8/kapadikris_jdbc.public.book_author">
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/a0aa8927/af6f80fd-afcd-434d-959b-c5f08e89d4b8/kapadikris_jdbc.public.book">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LibraryModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6334012">
-          <caret line="479" column="16" selection-start-line="479" selection-start-column="16" selection-end-line="479" selection-end-column="16" />
+        <state vertical-scroll-proportion="-10.666667">
+          <caret line="291" column="67" selection-start-line="291" selection-start-column="67" selection-end-line="291" selection-end-column="67" />
           <folding>
-            <element signature="e#0#25057#0" expanded="true" />
+            <element signature="e#0#25582#0" expanded="true" />
             <element signature="imports" expanded="true" />
             <element signature="method#returnBook#0;class#LibraryModel#0" expanded="false" />
             <element signature="method#closeDBConnection#0;class#LibraryModel#0" expanded="false" />
-            <element signature="method#deleteCus#0;class#LibraryModel#0" expanded="false" />
-            <element signature="method#deleteAuthor#0;class#LibraryModel#0" expanded="false" />
-            <element signature="method#deleteBook#0;class#LibraryModel#0" expanded="false" />
-            <marker date="1527569105000" expanded="true" signature="1884:1915" placeholder="SELECT * FRO... book" />
-            <marker date="1527569105000" expanded="true" signature="2666:2684" placeholder="SELECT * FRO... book" />
-            <marker date="1527569105000" expanded="true" signature="3469:3526" placeholder="SELECT * FRO... book" />
-            <marker date="1527569105000" expanded="true" signature="4378:4415" placeholder="SELECT * FRO... author" />
-            <marker date="1527569105000" expanded="true" signature="5182:5202" placeholder="SELECT * FRO... author" />
-            <marker date="1527569105000" expanded="true" signature="6066:6107" placeholder="SELECT * FRO... customer" />
-            <marker date="1527569105000" expanded="true" signature="6879:6901" placeholder="SELECT * FRO... customer" />
-            <marker date="1527569105000" expanded="true" signature="10571:10612" placeholder="SELECT * FRO... customer" />
-            <marker date="1527569105000" expanded="true" signature="10655:10715" placeholder="SELECT * FRO... book" />
-            <marker date="1527569105000" expanded="true" signature="10747:10812" placeholder="INSERT INTO cust_book... " />
-            <marker date="1527569105000" expanded="true" signature="10844:10924" placeholder="UPDATE book " />
-            <marker date="1527569105000" expanded="true" signature="14361:14402" placeholder="SELECT * FRO... customer" />
-            <marker date="1527569105000" expanded="true" signature="14445:14482" placeholder="SELECT * FRO... cust_book" />
-            <marker date="1527569105000" expanded="true" signature="14524:14589" placeholder="DELETE FROM " />
-            <marker date="1527569105000" expanded="true" signature="14634:14685" placeholder="UPDATE book " />
-            <marker date="1527569105000" expanded="true" signature="14634:14720" placeholder="UPDATE book " />
-            <marker date="1527569105000" expanded="true" signature="18335:18376" placeholder="SELECT * FRO... customer" />
-            <marker date="1527569105000" expanded="true" signature="18425:18464" placeholder="DELETE FROM " />
-            <marker date="1527569105000" expanded="true" signature="20412:20449" placeholder="SELECT * FRO... customer" />
-            <marker date="1527569105000" expanded="true" signature="20496:20531" placeholder="DELETE FROM " />
-            <marker date="1527569105000" expanded="true" signature="22357:22388" placeholder="SELECT * FRO... author" />
-            <marker date="1527569105000" expanded="true" signature="22427:22456" placeholder="DELETE FROM " />
-            <marker date="1527569105000" expanded="true" signature="22502:22539" placeholder="DELETE FROM " />
+            <marker date="1528352106000" expanded="true" signature="1884:1915" placeholder="SELECT * FRO... book" />
+            <marker date="1528352106000" expanded="true" signature="2711:2729" placeholder="SELECT * FRO... book" />
+            <marker date="1528352106000" expanded="true" signature="3559:3616" placeholder="SELECT * FRO... book" />
+            <marker date="1528352106000" expanded="true" signature="4475:4512" placeholder="SELECT * FRO... author" />
+            <marker date="1528352106000" expanded="true" signature="5279:5299" placeholder="SELECT * FRO... author" />
+            <marker date="1528352106000" expanded="true" signature="6163:6204" placeholder="SELECT * FRO... customer" />
+            <marker date="1528352106000" expanded="true" signature="6976:6998" placeholder="SELECT * FRO... customer" />
+            <marker date="1528352106000" expanded="true" signature="10004:10049" placeholder="SELECT * FRO... book_author" />
+            <marker date="1528352106000" expanded="true" signature="10004:10095" placeholder="SELECT autho... book_author" />
+            <marker date="1528352106000" expanded="true" signature="11163:11204" placeholder="SELECT * FRO... customer" />
+            <marker date="1528352106000" expanded="true" signature="11163:11226" placeholder="SELECT * FRO... customer" />
+            <marker date="1528352106000" expanded="true" signature="11163:11233" placeholder="SELECT * FRO... customer" />
+            <marker date="1528352106000" expanded="true" signature="11263:11323" placeholder="SELECT * FRO... book" />
+            <marker date="1528352106000" expanded="true" signature="11263:11334" placeholder="SELECT * FRO... book" />
+            <marker date="1528352106000" expanded="true" signature="11263:11335" placeholder="SELECT * FRO... book" />
+            <marker date="1528352106000" expanded="true" signature="11366:11431" placeholder="INSERT INTO cust_book... " />
+            <marker date="1528352106000" expanded="true" signature="11463:11543" placeholder="UPDATE book " />
+            <marker date="1528352106000" expanded="true" signature="14980:15021" placeholder="SELECT * FRO... customer" />
+            <marker date="1528352106000" expanded="true" signature="15064:15101" placeholder="SELECT * FRO... cust_book" />
+            <marker date="1528352106000" expanded="true" signature="15143:15208" placeholder="DELETE FROM " />
+            <marker date="1528352106000" expanded="true" signature="15253:15304" placeholder="UPDATE book " />
+            <marker date="1528352106000" expanded="true" signature="15253:15339" placeholder="UPDATE book " />
+            <marker date="1528352106000" expanded="true" signature="18954:18995" placeholder="SELECT * FRO... customer" />
+            <marker date="1528352106000" expanded="true" signature="18954:19025" placeholder="SELECT * FRO... customer" />
+            <marker date="1528352106000" expanded="true" signature="19061:19100" placeholder="DELETE FROM " />
+            <marker date="1528352106000" expanded="true" signature="19061:19114" placeholder="DELETE FROM " />
+            <marker date="1528352106000" expanded="true" signature="21030:21067" placeholder="SELECT * FRO... customer" />
+            <marker date="1528352106000" expanded="true" signature="21030:21094" placeholder="SELECT * FRO... author" />
+            <marker date="1528352106000" expanded="true" signature="21130:21165" placeholder="DELETE FROM " />
+            <marker date="1528352106000" expanded="true" signature="22850:22881" placeholder="SELECT * FRO... author" />
+            <marker date="1528352106000" expanded="true" signature="22850:22904" placeholder="SELECT * FRO... book" />
+            <marker date="1528352106000" expanded="true" signature="22936:22965" placeholder="DELETE FROM " />
+            <marker date="1528352106000" expanded="true" signature="23013:23050" placeholder="DELETE FROM " />
           </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor vertical-scroll-proportion="0.088452086">
+            <caret line="2" column="50" selection-start-line="2" selection-start-column="50" selection-end-line="2" selection-end-column="50" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="MultiMarkdownFxPreviewEditor">
+        <state />
       </provider>
     </entry>
   </component>

@@ -56,8 +56,8 @@ public class LibraryModel {
             //connection.setReadOnly(true);
             Statement statement = connection.createStatement();
             results = statement.executeQuery("SELECT * FROM book WHERE isbn =" + isbn);
-
-            result = this.getBooks(results);
+            result = "Found Book: \n";
+            result += this.getBooks(results, true);
             statement.close();
             //connection.setReadOnly(false);
         } catch (SQLException sqlex) {
@@ -81,8 +81,8 @@ public class LibraryModel {
             //connection.setReadOnly(true);
             Statement statement = connection.createStatement();
             results = statement.executeQuery("SELECT * FROM book");
-
-            result = this.getBooks(results);
+            result = "Catalogue: \n";
+            result += this.getBooks(results, false);
             statement.close();
             //connection.setReadOnly(false);
         } catch (SQLException sqlex) {
@@ -107,7 +107,7 @@ public class LibraryModel {
             Statement statement = connection.createStatement();
             results = statement.executeQuery("SELECT * FROM book AS b WHERE b.numofcop - b.numleft != 0");
 
-            result = this.getBooks(results);
+            result = this.getBooks(results, false);
             statement.close();
             //connection.setReadOnly(false);
         } catch (SQLException sqlex) {
@@ -273,19 +273,28 @@ public class LibraryModel {
      * @return String of all found information
      * @throws SQLException
      */
-    public String getBooks(ResultSet results) throws SQLException {
+    public String getBooks(ResultSet results, boolean showAuthor) throws SQLException {
         StringBuilder sb = new StringBuilder();
         while (results.next()) {
             sb.append(results.getInt(1));
-            sb.append(", ");
+            sb.append(": ");
             sb.append(results.getString("title"));
-            sb.append(", ");
+            sb.append("\n Edition: ");
             sb.append(results.getInt(3));
-            sb.append(", ");
+            sb.append(", Number of copies: ");
             sb.append(results.getInt(4));
-            sb.append(", ");
+            sb.append(", Copies left: ");
             sb.append(results.getInt(5));
             sb.append("\n");
+
+            if(showAuthor) {
+                sb.append("Authors: \n");
+                Statement statement = connection.createStatement();
+                ResultSet authors = statement.executeQuery("SELECT authorid FROM book_author WHERE isbn =" + results.getInt(1) + " ORDER BY authorseqno");
+                while(authors.next()) {
+                    sb.append(this.showAuthor(authors.getInt(1)));
+                }
+            }
         }
 
         String data = sb.toString();
@@ -310,8 +319,8 @@ public class LibraryModel {
         5. Commit the transaction (if actions were all successful, otherwise rollback)
          */
         String returnString = "";
-        String findCustomer = "SELECT * FROM customer WHERE customerid =" + customerID;
-        String findBook = "SELECT * FROM book WHERE isbn = " + isbn + " AND numleft > 0";
+        String findCustomer = "SELECT * FROM customer WHERE customerid =" + customerID + " FOR UPDATE";
+        String findBook = "SELECT * FROM book WHERE isbn = " + isbn + " AND numleft > 0 FOR UPDATE";
         String insertBook = "INSERT INTO cust_book (isbn, duedate, customerid) VALUES(?, ?, ?)";
         String updateBook = "UPDATE book SET numleft = numleft - 1 WHERE isbn = " + isbn +  " AND numleft > 0";
         PreparedStatement findStatement = null, findBookStatement = null, insertBookStatment = null, updateBookStatement = null;
@@ -482,7 +491,7 @@ public class LibraryModel {
 //        Delete from customer
 //        Table 2 in assignment brief states that on deletion of a customer, the corresponding entry in cust_book is restricted therefore is not deleted
         String returnString = "";
-        String findCustomer = "SELECT * FROM customer WHERE customerid =" + customerID;
+        String findCustomer = "SELECT * FROM customer WHERE customerid =" + customerID  + " FOR UPDATE";
         String deleteCustomer = "DELETE FROM customer WHERE customerid =" + customerID;
         PreparedStatement findStatement = null, deleteStatement = null;
 
@@ -532,31 +541,31 @@ public class LibraryModel {
         return returnString;
     }
 
-//    TODO CHECK
+
     public String deleteAuthor(int authorID) {
         //        Delete from Author
 //        Table 2 in assignment brief states that on deletion of a author, the corresponding entry in cust_book is restricted therefore is not deleted
         String returnString = "";
-        String findCustomer = "SELECT * FROM author WHERE authorid =" + authorID;
-        String deleteCustomer = "DELETE FROM author WHERE authorid =" + authorID;
+        String findAuthor = "SELECT * FROM author WHERE authorid =" + authorID + " FOR UPDATE";
+//        String deleteAuthor = "DELETE FROM author WHERE authorid =" + authorID;
         PreparedStatement findStatement = null, deleteStatement = null;
 
         try {
             connection.setAutoCommit(false);
-            findStatement = connection.prepareStatement(findCustomer);
+            findStatement = connection.prepareStatement(findAuthor);
 
 //            Ensure Author exists
             if(findStatement.executeQuery().next()) {
-                deleteStatement = connection.prepareStatement(deleteCustomer);
-
-                if(deleteStatement.executeUpdate() == 0) {
-                    returnString = "Could not delete author";
-                }else {
+//                deleteStatement = connection.prepareStatement(deleteAuthor);
+//
+//                if(deleteStatement.executeUpdate() == 0) {
+//                    returnString = "Could not delete author";
+//                }else {
                     connection.commit();
                     findStatement.close();
-                    deleteStatement.close();
+//                    deleteStatement.close();
                     return "Author successfully deleted";
-                }
+//                }
 
             } else {
                 returnString = "Author does not exist";
@@ -588,11 +597,10 @@ public class LibraryModel {
 
 //    TODO CHECK
     public String deleteBook(int isbn) {
-//        Table 2 in assignment brief states that on deletion of a author, the corresponding entry in cust_book is restricted therefore is not deleted
         String returnString = "";
-        String findBook = "SELECT * FROM book WHERE isbn =" + isbn;
+        String findBook = "SELECT * FROM book WHERE isbn =" + isbn + " FOR UPDATE";
         String deleteBook = "DELETE FROM book WHERE isbn =" + isbn;
-        String deleteBook_Author = "DELETE FROM book_author WHERE isbn = " + isbn;
+//        String deleteBook_Author = "DELETE FROM book_author WHERE isbn = " + isbn;
 
         PreparedStatement findStatement = null, deleteStatement = null, deleteBook_AuthorStatement = null;
 
@@ -608,17 +616,17 @@ public class LibraryModel {
                     returnString = "Could not delete book";
                 }else {
 //                    Delete book from book_author
-                    deleteBook_AuthorStatement = connection.prepareStatement(deleteBook_Author);
-
-                    if(deleteBook_AuthorStatement.executeUpdate() == 0) {
-                        returnString = "Could not delete book reference in book_author";
-                    }else {
+//                    deleteBook_AuthorStatement = connection.prepareStatement(deleteBook_Author);
+//
+//                    if(deleteBook_AuthorStatement.executeUpdate() == 0) {
+//                        returnString = "Could not delete book reference in book_author";
+//                    }else {
                         connection.commit();
                         findStatement.close();
                         deleteStatement.close();
-                        deleteBook_AuthorStatement.close();
+//                        deleteBook_AuthorStatement.close();
                         return "book successfully deleted";
-                    }
+//                    }
                 }
 
             } else {
